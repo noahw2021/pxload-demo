@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8C9E69012B2A1AD100A67DF5 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E69002B2A1AD100A67DF5 /* main.c */; };
+		8C9E69062B2A1B2900A67DF5 /* libSDL2-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9E69052B2A1B2900A67DF5 /* libSDL2-2.0.0.dylib */; };
+		8C9E690A2B2A1DC800A67DF5 /* libSDL2_ttf-2.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9E69092B2A1DC800A67DF5 /* libSDL2_ttf-2.0.0.dylib */; };
+		8C9E690E2B2A1F4900A67DF5 /* draw_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E690D2B2A1F4900A67DF5 /* draw_init.c */; };
+		8C9E69102B2A203000A67DF5 /* draw_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E690F2B2A203000A67DF5 /* draw_sdl.c */; };
+		8CB298D82B339C68004DC718 /* draw_fcns.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CB298D72B339C68004DC718 /* draw_fcns.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,13 @@
 /* Begin PBXFileReference section */
 		8C9E68F62B2A1AC100A67DF5 /* pxload-demo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "pxload-demo"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C9E69002B2A1AD100A67DF5 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		8C9E69032B2A1B1800A67DF5 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bin; path = ../../../../../opt/homebrew/Cellar/sdl2/2.28.5/bin; sourceTree = "<group>"; };
+		8C9E69052B2A1B2900A67DF5 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../opt/homebrew/Cellar/sdl2/2.28.5/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		8C9E69092B2A1DC800A67DF5 /* libSDL2_ttf-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_ttf-2.0.0.dylib"; path = "../../../../../opt/homebrew/Cellar/sdl2_ttf/2.20.2/lib/libSDL2_ttf-2.0.0.dylib"; sourceTree = "<group>"; };
+		8C9E690C2B2A1E6400A67DF5 /* draw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = draw.h; sourceTree = "<group>"; };
+		8C9E690D2B2A1F4900A67DF5 /* draw_init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = draw_init.c; sourceTree = "<group>"; };
+		8C9E690F2B2A203000A67DF5 /* draw_sdl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = draw_sdl.c; sourceTree = "<group>"; };
+		8CB298D72B339C68004DC718 /* draw_fcns.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = draw_fcns.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9E690A2B2A1DC800A67DF5 /* libSDL2_ttf-2.0.0.dylib in Frameworks */,
+				8C9E69062B2A1B2900A67DF5 /* libSDL2-2.0.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +55,10 @@
 		8C9E68ED2B2A1AC100A67DF5 = {
 			isa = PBXGroup;
 			children = (
+				8C9E690B2B2A1E5500A67DF5 /* draw */,
 				8C9E69002B2A1AD100A67DF5 /* main.c */,
 				8C9E68F72B2A1AC100A67DF5 /* Products */,
+				8C9E69022B2A1AFF00A67DF5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +68,27 @@
 				8C9E68F62B2A1AC100A67DF5 /* pxload-demo */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8C9E69022B2A1AFF00A67DF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C9E69092B2A1DC800A67DF5 /* libSDL2_ttf-2.0.0.dylib */,
+				8C9E69052B2A1B2900A67DF5 /* libSDL2-2.0.0.dylib */,
+				8C9E69032B2A1B1800A67DF5 /* bin */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C9E690B2B2A1E5500A67DF5 /* draw */ = {
+			isa = PBXGroup;
+			children = (
+				8C9E690C2B2A1E6400A67DF5 /* draw.h */,
+				8C9E690D2B2A1F4900A67DF5 /* draw_init.c */,
+				8C9E690F2B2A203000A67DF5 /* draw_sdl.c */,
+				8CB298D72B339C68004DC718 /* draw_fcns.c */,
+			);
+			path = draw;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,7 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9E69102B2A203000A67DF5 /* draw_sdl.c in Sources */,
 				8C9E69012B2A1AD100A67DF5 /* main.c in Sources */,
+				8C9E690E2B2A1F4900A67DF5 /* draw_init.c in Sources */,
+				8CB298D82B339C68004DC718 /* draw_fcns.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +277,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/Cellar/sdl2/2.28.5/include/SDL2,
+					/opt/homebrew/Cellar/sdl2_ttf/2.20.2/include/SDL2,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/sdl2/2.28.5/lib,
+					/opt/homebrew/Cellar/sdl2_ttf/2.20.2/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -245,6 +294,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/Cellar/sdl2/2.28.5/include/SDL2,
+					/opt/homebrew/Cellar/sdl2_ttf/2.20.2/include/SDL2,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/homebrew/Cellar/sdl2/2.28.5/lib,
+					/opt/homebrew/Cellar/sdl2_ttf/2.20.2/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
