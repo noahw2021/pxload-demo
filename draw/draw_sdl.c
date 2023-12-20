@@ -41,5 +41,5 @@ void DrawEndScene(void) {
 }
 
 void DrawPresent(void) {
-    
+    SDL_RenderPresent(DrawCtx->Renderer);
 }
