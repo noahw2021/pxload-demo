@@ -20,8 +20,9 @@ void DrawInit(const char* Name, int w, int h) {
     
     DrawCtx->Window = SDL_CreateWindow(Name, SDL_WINDOWPOS_CENTERED,
         SDL_WINDOWPOS_CENTERED, w, h, 0);
-    DrawCtx->Renderer = SDL_CreateRenderer(DrawCtx->Window, -1, SDL_RENDERER_SOFTWARE);
-    DrawCtx->Font = TTF_OpenFont("/Library/Fonts/Arial.ttf", 12);
+    DrawCtx->Renderer = SDL_CreateRenderer(DrawCtx->Window, -1, SDL_RENDERER_ACCELERATED |
+        SDL_RENDERER_PRESENTVSYNC);
+    DrawCtx->Font = TTF_OpenFont("/System/Library/Fonts/Supplemental/Arial.ttf", 14);
     
     return;
 }

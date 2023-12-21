@@ -37,6 +37,7 @@
 		8C9E690D2B2A1F4900A67DF5 /* draw_init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = draw_init.c; sourceTree = "<group>"; };
 		8C9E690F2B2A203000A67DF5 /* draw_sdl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = draw_sdl.c; sourceTree = "<group>"; };
 		8CB298D72B339C68004DC718 /* draw_fcns.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = draw_fcns.c; sourceTree = "<group>"; };
+		8CB298DA2B34B9DE004DC718 /* png.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +56,7 @@
 		8C9E68ED2B2A1AC100A67DF5 = {
 			isa = PBXGroup;
 			children = (
+				8CB298D92B34B9D4004DC718 /* png */,
 				8C9E690B2B2A1E5500A67DF5 /* draw */,
 				8C9E69002B2A1AD100A67DF5 /* main.c */,
 				8C9E68F72B2A1AC100A67DF5 /* Products */,
@@ -89,6 +91,14 @@
 				8CB298D72B339C68004DC718 /* draw_fcns.c */,
 			);
 			path = draw;
+			sourceTree = "<group>";
+		};
+		8CB298D92B34B9D4004DC718 /* png */ = {
+			isa = PBXGroup;
+			children = (
+				8CB298DA2B34B9DE004DC718 /* png.h */,
+			);
+			path = png;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

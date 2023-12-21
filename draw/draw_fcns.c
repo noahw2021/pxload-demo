@@ -40,7 +40,7 @@ void DrawText(int x, int y, const char* Text, unsigned long Color) {
     Color2.b = B(Color);
     Color2.a = 255;
     
-    SDL_Surface* TextSurface = TTF_RenderText_Solid(DrawCtx->Font, Text, Color2);
+    SDL_Surface* TextSurface = TTF_RenderText_Blended(DrawCtx->Font, Text, Color2);
     SDL_Texture* Txt = SDL_CreateTextureFromSurface(DrawCtx->Renderer, TextSurface);
     
     SDL_Rect Rectangle;
@@ -51,6 +51,7 @@ void DrawText(int x, int y, const char* Text, unsigned long Color) {
     SDL_FreeSurface(TextSurface);
     
     SDL_RenderCopy(DrawCtx->Renderer, Txt, NULL, &Rectangle);
+    SDL_DestroyTexture(Txt);
     return;
 }
 
@@ -66,5 +67,6 @@ void DrawPixels(int x, int y, int w, int h, void* Pixels) {
     SDL_FreeSurface(Surface);
     
     SDL_RenderCopy(DrawCtx->Renderer, Txt, NULL, &Rectangle);
+    SDL_DestroyTexture(Txt);
     return;
 }

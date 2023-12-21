@@ -17,9 +17,14 @@ int main(int argc, char** argv) {
     
     while (!DrawCtx->WantsQuit) {
         DrawBeginScene();
+        
+        DrawText(10, 10, "Hello, world!", 0xFFFFFFFF);
+        
         DrawEndScene();
         DrawPresent();
     }
+    
+    while (1);
     
     return 0;
 }
