@@ -13,6 +13,8 @@
 		8C9E690E2B2A1F4900A67DF5 /* draw_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E690D2B2A1F4900A67DF5 /* draw_init.c */; };
 		8C9E69102B2A203000A67DF5 /* draw_sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = 8C9E690F2B2A203000A67DF5 /* draw_sdl.c */; };
 		8CB298D82B339C68004DC718 /* draw_fcns.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CB298D72B339C68004DC718 /* draw_fcns.c */; };
+		8CD3B4E62B34BC5F00DA8089 /* png_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CB298DB2B34BA73004DC718 /* png_init.c */; };
+		8CD3B4E72B34BC5F00DA8089 /* png_load.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CB298DC2B34BA7C004DC718 /* png_load.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,9 @@
 		8C9E690F2B2A203000A67DF5 /* draw_sdl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = draw_sdl.c; sourceTree = "<group>"; };
 		8CB298D72B339C68004DC718 /* draw_fcns.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = draw_fcns.c; sourceTree = "<group>"; };
 		8CB298DA2B34B9DE004DC718 /* png.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
+		8CB298DB2B34BA73004DC718 /* png_init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = png_init.c; sourceTree = "<group>"; };
+		8CB298DC2B34BA7C004DC718 /* png_load.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = png_load.c; sourceTree = "<group>"; };
+		8CD3B4E92B34BD7A00DA8089 /* png_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = png_internal.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				8CB298DA2B34B9DE004DC718 /* png.h */,
+				8CD3B4E92B34BD7A00DA8089 /* png_internal.h */,
+				8CB298DB2B34BA73004DC718 /* png_init.c */,
+				8CB298DC2B34BA7C004DC718 /* png_load.c */,
 			);
 			path = png;
 			sourceTree = "<group>";
@@ -158,6 +166,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD3B4E62B34BC5F00DA8089 /* png_init.c in Sources */,
+				8CD3B4E72B34BC5F00DA8089 /* png_load.c in Sources */,
 				8C9E69102B2A203000A67DF5 /* draw_sdl.c in Sources */,
 				8C9E69012B2A1AD100A67DF5 /* main.c in Sources */,
 				8C9E690E2B2A1F4900A67DF5 /* draw_init.c in Sources */,

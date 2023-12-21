@@ -16,16 +16,15 @@ typedef struct _PNG_IMAGE {
 }PNG_IMAGE, *PPNG_IMAGE;
 
 typedef struct _PNG_CTX {
-    unsigned long Reserved;
+    unsigned long ImageCount;
+    PPNG_IMAGE Images;
 }PNG_CTX, *PPNG_CTX;
+extern PPNG_CTX PngCtx;
 
 unsigned long PngLoad(const char* File);
 void* PngGetPixels(unsigned long ImageHandle);
-unsigned long PngGetWidth(unsigned long ImageHandle);
-unsigned long PngGetHeight(unsigned long ImageHandle);
-
-unsigned long PngCreate(const char* Name, void* Pixels,
-    unsigned long w, unsigned long h);
+int PngGetWidth(unsigned long ImageHandle);
+int PngGetHeight(unsigned long ImageHandle);
 
 void PngDestroy(unsigned long ImageHandle);
 
