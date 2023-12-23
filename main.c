@@ -20,9 +20,11 @@ int main(int argc, char** argv) {
     
     while (!DrawCtx->WantsQuit) {
         DrawBeginScene();
+    
+        DrawText(0, 0, "PXLoad Demonstration Application", 0xFFFFFFFF);
         
-        DrawText(10, 10, "Hello, world!", 0xFFFFFFFF);
-        DrawPixels(10, 20, PngGetWidth(TestImage), PngGetHeight(TestImage), PngGetPixels(TestImage));
+        DrawPixels(10, 0, PngGetWidth(TestImage), PngGetHeight(TestImage), PngGetPixels(TestImage));
+        
         
         DrawEndScene();
         DrawPresent();

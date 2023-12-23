@@ -55,9 +55,15 @@ void DrawText(int x, int y, const char* Text, unsigned long Color) {
     return;
 }
 
+#define RMASK 0xFF000000
+#define GMASK 0x00FF0000
+#define BMASK 0x0000FF00
+#define AMASK 0x000000FF
+
 void DrawPixels(int x, int y, int w, int h, void* Pixels) {
-    SDL_Surface* Surface = SDL_CreateRGBSurfaceWithFormatFrom(Pixels,
-        w, h, 32, 32, SDL_PIXELFORMAT_RGBA8888);
+    SDL_Surface* Surface = SDL_CreateRGBSurface(0, w, h, 32, 0, 0, 0, 0);
+    memcpy(Surface->pixels, Pixels, w * h * 4);
+    
     SDL_Texture* Txt = SDL_CreateTextureFromSurface(DrawCtx->Renderer, Surface);
     SDL_Rect Rectangle;
     Rectangle.x = x;

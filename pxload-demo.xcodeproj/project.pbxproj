@@ -15,6 +15,7 @@
 		8CB298D82B339C68004DC718 /* draw_fcns.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CB298D72B339C68004DC718 /* draw_fcns.c */; };
 		8CD3B4E62B34BC5F00DA8089 /* png_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CB298DB2B34BA73004DC718 /* png_init.c */; };
 		8CD3B4E72B34BC5F00DA8089 /* png_load.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CB298DC2B34BA7C004DC718 /* png_load.c */; };
+		8CD3B4ED2B34C06E00DA8089 /* spng.c in Sources */ = {isa = PBXBuildFile; fileRef = 8CD3B4EC2B34C06E00DA8089 /* spng.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,7 +43,8 @@
 		8CB298DA2B34B9DE004DC718 /* png.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = png.h; sourceTree = "<group>"; };
 		8CB298DB2B34BA73004DC718 /* png_init.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = png_init.c; sourceTree = "<group>"; };
 		8CB298DC2B34BA7C004DC718 /* png_load.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = png_load.c; sourceTree = "<group>"; };
-		8CD3B4E92B34BD7A00DA8089 /* png_internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = png_internal.h; sourceTree = "<group>"; };
+		8CD3B4EB2B34C06E00DA8089 /* spng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spng.h; sourceTree = "<group>"; };
+		8CD3B4EC2B34C06E00DA8089 /* spng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = spng.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +103,21 @@
 		8CB298D92B34B9D4004DC718 /* png */ = {
 			isa = PBXGroup;
 			children = (
+				8CD3B4EA2B34C04C00DA8089 /* spng */,
 				8CB298DA2B34B9DE004DC718 /* png.h */,
-				8CD3B4E92B34BD7A00DA8089 /* png_internal.h */,
 				8CB298DB2B34BA73004DC718 /* png_init.c */,
 				8CB298DC2B34BA7C004DC718 /* png_load.c */,
 			);
 			path = png;
+			sourceTree = "<group>";
+		};
+		8CD3B4EA2B34C04C00DA8089 /* spng */ = {
+			isa = PBXGroup;
+			children = (
+				8CD3B4EC2B34C06E00DA8089 /* spng.c */,
+				8CD3B4EB2B34C06E00DA8089 /* spng.h */,
+			);
+			path = spng;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CD3B4E62B34BC5F00DA8089 /* png_init.c in Sources */,
+				8CD3B4ED2B34C06E00DA8089 /* spng.c in Sources */,
 				8CD3B4E72B34BC5F00DA8089 /* png_load.c in Sources */,
 				8C9E69102B2A203000A67DF5 /* draw_sdl.c in Sources */,
 				8C9E69012B2A1AD100A67DF5 /* main.c in Sources */,
